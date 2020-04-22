@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .container {
+    width: 800px;
+    height: 200px;
+    border: 1px solid red;
+    display: flex;
+  }
+  .item {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 200px;
+  }
+  .item:nth-child(1) {
+    background-color: #f00;
+  }
+  .item:nth-child(2) {
+    background-color: #990099;
+  }
+  .item:nth-child(3) {
+    background-color: #778488;
+  }
+  .item:nth-child(4) {
+    background-color: #223;
+  }
+  .item:nth-child(5) {
+    background-color: #556445;
+  }
+</style>
+<body>
+  <!-- 20200422 今天跪的题目之一，关键时候忘光光，就是不熟，没有理由 -->
+  <!-- 
+    ** 用于父容器
+
+    1. flex-direction: 决定主轴的方向(即项目的排列方向)
+    flex-direction: row | row-reverse | column | column-reverse;
+
+    2. flex-wrap: 决定容器内项目是否可换行
+    flex-wrap: nowrap | wrap | wrap-reverse;
+    （wrap-reverse：换行，第一行在下方）
+
+    3. flex-flow: flex-direction 和 flex-wrap 的简写形式
+    flex-flow: <flex-direction> || <flex-wrap>;
+
+    4. justify-content：定义了项目在主轴的对齐方式。
+    justify-content: flex-start | flex-end | center | space-between | space-around;
+
+    5. align-items: 定义了项目在交叉轴上的对齐方式
+    align-items: flex-start | flex-end | center | baseline | stretch;
+
+    6. align-content: 定义了多根轴线的对齐方式，如果项目只有一根轴线，那么该属性将不起作用
+    align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+   -->
+  
+
+   <div class="container">
+     <div class="item">1</div>
+     <div class="item">2</div>
+     <div class="item">3</div>
+     <div class="item">4</div>
+     <div class="item">5</div>
+   </div>
+</body>
+</html>
