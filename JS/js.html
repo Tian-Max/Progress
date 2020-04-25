@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    
+    // CSS diary JS
+    // 会员 看全部
+    // 普通 CSS
+    // 权限: 会员 非会员
+    // token: localStrage
+
+    // const obj = {
+    //   vipPath: ['/css', '/diary', '/js'],
+    //   put: ['/css'],
+    // }
+
+    // router.beforeEach((to, from, next) => {
+    //   if (!huiyuan) {
+    //     put.includes(/diary) {
+    //       next('/login')
+    //     }
+    //   }
+    // })
+
+    // 箭头函数没有this
+    // 箭头函数不能当类使用
+    // 没有arguments
+    // this在定义的时候指向谁就是谁
+    // 没法通过call aplly bind 改变this
+    var name = 'aa'
+
+    function fn (){
+      this.name = 'bb'
+      const met = () => {
+        console.log(this.name)
+      }
+      met()
+    }
+
+    fn()
+
+  </script>
+</body>
+</html>
